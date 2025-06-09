@@ -3,5 +3,17 @@
 version = 4
 
 [[package]]
-name = "defi-liquidation-guardian"
+name = "api"
+version = "0.1.0"
+
+[[package]]
+name = "automation"
+version = "0.1.0"
+
+[[package]]
+name = "monitoring"
+version = "0.1.0"
+
+[[package]]
+name = "shared"
 version = "0.1.0"
