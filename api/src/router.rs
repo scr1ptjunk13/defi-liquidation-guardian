@@ -1,7 +1,7 @@
 use axum::{
     Router,
     middleware::{self, Next},
-    extract::Request,
+    extract::{Request},
     response::Response,
     routing::get,
 };
