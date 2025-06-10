@@ -1,0 +1,10 @@
+# config/production.toml
+environment = "production"
+
+[server]
+host = "127.0.0.1"
+port = 8080
+
+[database]
+url = "postgres://dev_user:password@localhost/dev_db"
+pool_size = 10

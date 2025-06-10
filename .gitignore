@@ -1,1 +1,13 @@
 /target
+**/*.rs.bk
+
+#IDE Configs
+.idea/
+*.iml
+
+#Logs
+*.log
+
+#Other
+/*.swp
+
