@@ -15,7 +15,17 @@ serde_json = "1.0.140"
 tracing = "0.1.41"
 thiserror = "2.0.12"
 anyhow = "1.0.98"
+dotenvy = "0.15.7" #optional
 
-[workspace.dev-dependencies]
-proptest = "1.7.0"
-criterion = "0.6.0"
+
+#dev-dependencies is not in cargo manifest spec - must be added to individual create that needs them
+#[workspace.dev-dependencies]
+#proptest = "1.7.0"
+#criterion = "0.6.0"
+
+#add platform specific deps to individual crates
+#[target.'cfg(unix)'.dependencies]
+#nix = "0.26"
+
+#[target.'cfg(windows)'.dependencies]
+#winapi = { version = "0.3", features = ["fileapi", "handleapi"] }
